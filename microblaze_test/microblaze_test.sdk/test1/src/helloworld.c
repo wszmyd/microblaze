@@ -20,7 +20,7 @@ int main()
 
     	switch (buttonsState)
     	{
-			case 0x01:
+	    case 0x01:
                 xil_printf("Button 1 pressed\n\r");
                 XGpio_DiscreteWrite(&Gpio, 1, buttonsState);
                 break;
