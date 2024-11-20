@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
-
 #include "xparameters.h"
 #include "xgpio.h"
 #include "xil_types.h"
 #include "sleep.h"
 
-#define GPIO_DEVICE_ID_TIME XPAR_AXI_GPIO_0_DEVICE_ID // ID for GPIO setting time
-#define GPIO_DEVICE_ID_LED XPAR_AXI_GPIO_1_DEVICE_ID
-#define TIME_OUTPUT_CHANNEL 1       // Channel for time
-#define LED_OUTPUT_CHANNEL 1
+#define GPIO_DEVICE_ID_TIME XPAR_AXI_GPIO_0_DEVICE_ID         // ID for GPIO setting time
+#define GPIO_DEVICE_ID_LED XPAR_AXI_GPIO_1_DEVICE_ID          // ID for LEDs
+#define TIME_OUTPUT_CHANNEL 1                                 // Channel for time
+#define LED_OUTPUT_CHANNEL 1                                  // Channel for LEDs
 
 XGpio GpioTIME;
 XGpio GpioLED;
